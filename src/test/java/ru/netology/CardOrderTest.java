@@ -15,6 +15,6 @@ public class CardOrderTest {
         $(".input_type_tel input").setValue("+79113334554");
         $(".checkbox__box").click();
         $(".button").click();
-        $("p").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
     }
 }
